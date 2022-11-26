@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type='text/javascript' src="/components/js/treino.js"></script>
+    <link rel='stylesheet' href='/style/style.css'>
+
+</head>
+
+<body page='lista'>
+
+    <nav id="menu">
+        <ul>
+
+            <li><a href="/index.html">Pagina Inicial</a></li>
+            <li><a href="/pages/treino.html">Treinos</a></li>
+            <li><a href="/pages/alunos.html">Alunos</a></li>
+            <li><a href="/pages/professores.html">Professor</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <div id='listaRegistros'>
+
+        <div id="timeline">Treinos</div>
+        <table>
+
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+
+        <div>
+            <button onclick="showModal()">Novo Treino</button>
+        </div>
+
+    </div>
+    <div class="modal" id="modal">
+        <form id='cadastroRegistro' method="post">
+            <fieldset>
+
+                <div id="dia-treino" class='label'>
+                    <div>Dia</div>
+                    <div>
+                        <select id="option-day">
+                            <option value="seg">Seg</option>
+                            <option value="ter">Ter</option>
+                            <option value="qua">Qua</option>
+                            <option value="qui">Qui</option>
+                            <option value="sex">Sex</option>
+                            <option value="sab">Sáb</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="label">
+                    <div>
+                        Data
+                    </div>
+                    <div>
+                        <input type="date" id="dia-semana" />
+                    </div>
+                </div>
+
+
+                <div class='label'>
+                    <div>Treino do Dia</div>
+                    <div id="box-treino">
+                        <input required id='atividade-nova' type="textarea" rows="6" cols="1" />
+                    </div>
+                </div>
+
+                <div class='label'>
+                    <div>Inicio Treino</div>
+                    <div id="box-treino">
+                        <input required id='hora-inicio' type="time" rows="6" cols="1" />
+                    </div>
+                </div>
+
+                <div class='label'>
+                    <div>Fim Treino</div>
+                    <div id="box-treino">
+                        <input required id='hora-fim' type="time" rows="6" cols="1" />
+                    </div>
+                </div>
+
+                <div id="pai-botao">
+
+                    <div id="add-treino" type="button" onclick="adicionarTreino()">Adicionar Exercicio</div>
+                    <button>Salvar</button>
+                    <button onclick="closeModal()" class="cinza" type='button'>Cancelar</button>
+                </div>
+
+
+
+            </fieldset>
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>

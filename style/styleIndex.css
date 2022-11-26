@@ -1,0 +1,150 @@
+@import url("https://rsms.me/inter/inter.css%27");
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+a {
+    background-color: transparent;
+}
+
+.image-3 {
+    width: 110px;
+    margin-left: 450px;
+    margin-right: 350px;
+    
+}
+
+.image-4 {
+    position: relative;
+    height: 100%;
+    background-image: url(/components/assets/foto.jpeg);
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    background-position-y: top;
+}
+
+#nav-head {
+    display: flex;
+    align-items: center;
+    background-color: #4e8acf;
+    height: 100px;
+
+}
+
+.w-nav-brand {
+    position: relative;
+    text-decoration: none;
+    color: #333333;
+}
+
+
+.nav-options {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+.container-image {
+    height: 550px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-text{
+    display: flex;
+    width: 50%;
+}
+.paragraph{
+    margin-left: 12%;
+    
+}
+.paragraph-2{
+    margin-left: 12%;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    color: #4e88d4;
+}
+.fale-conosco{
+    display: flex;
+    flex-direction: column;
+    
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #423f3f80;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4aa7dd;
+    color: #fff;
+    margin: 3px;
+    padding: 10px 15px;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.2);
+}
+.modal-content {
+
+    background-color: white;
+    padding: 16px 24px;
+    width: 384px;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float:right;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+button.cinza {
+    background-color: #c0bdbde5;
+    color: #3f3e3e;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+#pai-botao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <script type='text/javascript' src="/components/js/abaAlunos.js"></script>
+    <link rel='stylesheet' href='/style/style.css'>
+
+</head>
+
+<body>
+    <nav id="menu">
+        <ul>
+
+            <li><a href="/index.html">Pagina Inicial</a></li>
+            <li><a href="/pages/treino.html">Treinos</a></li>
+            <li><a href="/pages/alunos.html">Alunos</a></li>
+            <li><a href="/pages/professores.html">Professor</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div id='listaAlunos'>
+
+        <div id="alunos">Alunos</div>
+        <table>
+
+            <tbody id='listaAlunoBody'></tbody>
+        </table>
+
+        <div>
+            <button onclick="showModal()">Novo Aluno</button>
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal">
+        <form id='cadastroRegistro' method="post">
+            <fieldset>
+
+                <div class='label'>
+                    <div>
+                        Nome
+                    </div>
+                    <div>
+                        <input type="text" id="nome-aluno" rows="6" cols="1" />
+                    </div>
+                </div>
+
+                <div class="label">
+                    <div>
+                        CPF
+                    </div>
+                    <div>
+                        <input type="number" id="cpf-aluno" minlength="10" , maxlength="11" />
+                    </div>
+                </div>
+
+                <div class="label">
+                    <div>
+                        Data Nascimento
+                    </div>
+                    <div>
+                        <input type="date" id="nasc-aluno" />
+                    </div>
+                </div>
+
+                <div class='label'>
+                    <div>Telefone</div>
+                    <div id="box-treino">
+                        <input type="number" id="tel-aluno" minlength="10" , maxlength="12" />
+                    </div>
+                </div>
+
+
+                <div class="label">
+                    <div>
+                        Email
+                    </div>
+                    <div>
+                        <input type="email" id="email-aluno" />
+                    </div>
+                </div>
+
+
+                <div class="label">
+                    <div>
+                        Possui Necessidades Expeciais
+                    </div>
+                    <div>
+                        <textarea rows="6" id="nesc-aluno"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="label">
+                    <div id="pai-radio" style="display:flex;flex-direction:column">
+                        <div>
+                            Genero
+                        </div>
+                        <div><input type="radio" id="sex-alunoF" name="radio-genero"
+                                value="Feminino"><label>Feminino</label></input></div>
+                        <div><input type="radio" id="sex-alunoM" name="radio-genero"
+                                value="Masculino"><label>Masculino</label></input></div>
+                        <div><input type="radio" id="sex-aluno" name="radio-genero"
+                                value="Prefiro nao responder"><label>Prefiro não responder</label></input></div>
+
+                    </div>
+                </div>
+
+                <div id="pai-botao">
+                    <button>Salvar</button>
+                    <button onclick="closeModal()" class="cinza" type='button'>Cancelar</button>
+                </div>
+
+
+
+            </fieldset>
+        </form>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

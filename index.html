@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./style/styleIndex.css'>
+    <script type='text/javascript' src="/components/js/index.js"></script>
+    <script src="/components/js/script.js"></script>
+    <title>Sistema Para Box de Crossfit - Ubuntu CrossApp</title>
+</head>
+
+<body>
+    <header>
+
+        <nav id="nav-head">
+            <div id="container-options">
+                <a href="#" class="w.nav-brand">
+                    <img src="./components/assets/CROSS1-removebg-preview.png" loading="lazy" alt class="image-3">
+                </a>
+                <a class="nav-options" href="./index.html">Pagina Inicial</a>
+                <a class="nav-options" href="./pages/treino.html">Treinos</a>
+                <a class="nav-options" href="./pages/alunos.html">Alunos</a>
+                <a class="nav-options" href="./pages/professores.html">Professores</a>
+            </div>
+            <meta
+                content="Conheça a maior plataforma para gerenciamento do seu box de Cross Training. Deixe seu box RX com CrossX."
+                property="og:description">
+        </nav>
+
+    </header>
+    <div class="container-image">
+        <div class="image-4"></div>
+    </div>
+    <div class="about">
+        <div>
+            <h1> Sobre o Ubuntu CrossApp </h1>
+        </div>
+        <div class="container-text">
+            <div class="paragraph">
+                <span>
+                    <img src="https://appcrossx.com/images/administre-seu-box-1.png">
+                    <h4>
+                        Administre seu box
+                    </h4>
+                    <p>
+                        O Ubuntu App permite ao dono do box monitorar a frequência e performance de seus alunos,
+                        além de realizar checkin e criar seus treinos de forma fácil e eficaz.
+                    </p>
+
+                </span>
+            </div>
+            <div class="paragraph-2">
+                <span>
+                    <img src="https://appcrossx.com/images/mobile-crossx-1.png">
+                    <h4>
+                        Registre seu treino
+                    </h4>
+                    <p>
+                        Registre o resultado dos seus wods e tenha um histórico detalhado do seu desempenho dentro do
+                        box.
+                        Encontre suas deficiências e melhore sua performance a cada treino.
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div id="b-fale-conosco">
+            <button onclick="showModal()">Fale Conosco</button>
+        </div>
+        <div class="modal" id="modal">
+           
+        <div class="fale-conosco">
+            <form>
+                <p>Nome*</p>
+                <input type="text" />
+                <p> Telefone para contato*</p>
+                <input type="number" />
+                <p>Email*</p>
+                <input type="email" />
+                <P>
+                    Sobre você..
+                </p>
+                <select>
+
+                    <option value="">Selecione</option>
+                    <option value="">Aluno</option>
+                    <option value="">Administrador do Box</option>
+                    <option value="">HeadCoach/Coach</option>
+
+                </select>
+                <p>Nome do Estabelecimento*</p>
+                <input type="text" />
+
+            </form>
+
+        </div>
+        
+        <div id="pai-botao">
+            <div id="pai-botao">
+                <button>Salvar</button>
+                <button onclick="closeModal()" class="cinza" type='button'>Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>     
+</div>
+</body>
+
+</html>

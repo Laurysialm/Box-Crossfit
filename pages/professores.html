@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type='text/javascript' src="/components/js/abaProfessores.js"></script>
+    <link rel='stylesheet' href='/style/style.css'>
+
+
+</head>
+
+<body>
+
+
+    <nav id="menu">
+        <ul>
+
+            <li><a href="/index.html">Pagina Inicial</a></li>
+            <li><a href="/pages/treino.html">Treinos</a></li>
+            <li><a href="/pages/alunos.html">Alunos</a></li>
+            <li><a href="/pages/professores.html">Professor</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div id='listaProfessor'>
+
+        <div id="professor">Professor</div>
+        <table>
+
+            <tbody id='listaProfBody'></tbody>
+        </table>
+
+        <div>
+            <button onclick="showModal()">Novo Professor</button>
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal">
+        <form id='cadastroRegistro' method="post">
+            <fieldset>
+
+                <div>
+                    <label for="nome-prof"></label>
+                    <div>
+                        Nome
+                    </div>
+                    <div>
+                        <input type="text" id="nome-prof" rows="6" cols="1" />
+                    </div>
+                </div>
+
+                <div class="label">
+                    <div id="pai-radio" style="display:flex;flex-direction:column">
+                        <div>
+                            Genero
+                        </div>
+                        <div><input type="radio" id="sex-alunoF" name="radio-genero"
+                                value="Feminino"><label>Feminino</label></input></div>
+                        <div><input type="radio" id="sex-alunoM" name="radio-genero"
+                                value="Masculino"><label>Masculino</label></input></div>
+                        <div><input type="radio" id="sex-aluno" name="radio-genero"
+                                value="Prefiro nao responder"><label>Prefiro não responder</label></input></div>
+
+                    </div>
+                </div>
+                <div id="pai-botao">
+                    <button>Salvar</button>
+                    <button onclick="closeModal()" class="cinza" type='button'>Cancelar</button>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
